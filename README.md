@@ -1,65 +1,87 @@
-# Smart Soil Moisture Monitoring & Irrigation Alert System
+# Smart Soil Moisture Monitoring & Irrigation Alert System 🌱
 
-A student hardware project exploring a practical way to monitor soil moisture and help a grower decide when irrigation may be needed.
+Hi! I'm Astha, a Class 11 student exploring AI, electronics and ideas that can solve real problems. This project is one of my attempts to turn an idea I cared about into something I can actually design, test and improve.
 
-> **Current status:** Concept and research stage. The physical prototype, circuit, firmware, calibration results, and field tests are not yet complete. This repository will document progress as the project develops.
+The idea is simple: **can we help a farmer understand when the soil may need water, instead of relying only on a fixed watering schedule?**
 
-## Problem
+I'm still learning hardware, so this repository is my real project notebook: the research, rough drawings, decisions, mistakes, things I need to check, and progress as I go. I want to keep the original work here too, not hide it behind polished documentation.
 
-Checking soil moisture manually can be inconsistent, and watering decisions may be made without a measured reading. This project will explore whether a low-cost electronic sensor can provide a useful moisture reading and a clear irrigation-status alert.
+> **Current stage:** concept + research + first hand-drawn workflow/circuit idea. I have not yet verified the circuit, built the hardware prototype, calibrated the sensor, or collected test results. I'll update this as I actually do the work.
 
-## Planned first version (MVP)
+## Why I started thinking about this
 
-1. Read a capacitive soil-moisture sensor with a microcontroller.
-2. Record raw sensor readings from the selected soil and sensor.
-3. Calibrate and test readings under documented soil conditions.
-4. Display a simple status such as **Moisture OK** or **Check irrigation** using a verified threshold.
-5. Explore sending the reading/status to a phone over Wi-Fi after the basic measurement works.
+Plants can be affected when they receive too much or too little water. Farmers also have busy schedules, and weather and soil conditions can change. My first idea was to make a device that checks moisture near plant roots and sends a useful status to a farmer's phone.
 
-The threshold and sensor readings will need testing. The device will not claim an exact moisture percentage or water-saving result unless those claims are validated.
+I had written an earlier problem statement and research notes before starting this repository structure. Those originals are linked below so my initial thinking stays part of the project.
 
-## How it is intended to work
+## My current idea
 
-`Soil → Capacitive moisture sensor → Microcontroller → Calibrated threshold → Status/alert → (later) Phone over Wi-Fi`
+1. A capacitive soil-moisture sensor measures a signal related to the moisture in the soil.
+2. An ESP32-based controller reads the sensor signal.
+3. I test the readings in the soil I use and work out a threshold that makes sense for that setup.
+4. The device shows a simple status, for example **Moisture may be low — check irrigation**.
+5. Later, if the basic version works, I can explore sending the status to a phone over Wi-Fi.
+6. Solar power is something I've drawn as a possible power option, but I still need to research the power requirements before deciding how to build it.
 
-See [the system architecture notes](docs/system-architecture.md).
+This is an idea and plan, not a claim that all these features work already.
+
+## My first hand-drawn workflow
+
+My notebook drawing connects the sensor, ESP32 controller, threshold comparison, irrigation status/alert, power supply, LED and buzzer. It also has a solar-power idea. I'm treating it as an early concept drawing; the actual connections still need checking before I wire anything.
+
+- [Read the notes from my first workflow/circuit idea](docs/first-workflow-notes.md)
+- [See the concept-level system architecture](docs/system-architecture.md)
+
+**Important checks before wiring:** confirm the exact sensor model and its supply/output voltage, the exact ESP32 board and ADC pin, and the LED/buzzer connections. ESP32 GPIO inputs are not 5 V tolerant. This drawing is not a verified circuit yet.
+
+## My original work (please keep these!)
+
+These files are my earlier notes and uploads. They are part of how the project started.
+
+- [Original problem statement](Fallen-Soil%20moisture%20sensor/doc/problem-statement.txt.txt)
+- [Original research folder, including PDFs and Word files](Fallen-Soil%20moisture%20sensor/research/)
+- [Original images folder](Fallen-Soil%20moisture%20sensor/images/)
+- [Original project folder](Fallen-Soil%20moisture%20sensor/)
 
 ## Repository map
 
-- `research/` — problem definition, component research, and references
-- `docs/` — system architecture, design decisions, and project notes
-- `hardware/` — schematic and PCB design files as they are created
-- `firmware/` — microcontroller code as it is developed
-- `testing/` — test plans, observations, and calibration results
-- `BOM.csv` — planned parts list; confirm exact models and prices before ordering
+- `Fallen-Soil moisture sensor/` — my original uploaded documents, images and research. I am keeping these in place.
+- `research/` — newer research notes and questions to investigate
+- `docs/` — how I currently understand the system and its design
+- `hardware/schematic/` — final circuit files after the connections are verified
+- `hardware/pcb/` — PCB design files if/when needed
+- `CAD/` — 3D or mechanical design files if needed
+- `firmware/` — code for the controller when I start testing it
+- `testing/` — calibration notes, observations, failures and results
+- `progress/` — my own dated progress journal
+- `BOM.csv` — parts list; exact models still need to be confirmed
 
-Empty folders may not appear on GitHub until they contain a file.
+## Progress so far
 
-## Current limitations and safety
+- [x] Original problem statement and research files uploaded
+- [x] Started organising the repository without replacing the original folder
+- [x] Drew an initial workflow/circuit concept in my notebook
+- [ ] Confirm the exact sensor and ESP32 board
+- [ ] Check safe voltage levels and pin assignments
+- [ ] Finalise the parts list with real part numbers
+- [ ] Make and review the actual schematic
+- [ ] Design a PCB if required
+- [ ] Build and test the first version
+- [ ] Record calibration readings and what they mean
+- [ ] Try a phone alert only after the basic reading works
 
-- The exact sensor, controller, power arrangement, and pin assignments still need to be selected and verified.
-- ESP32 GPIO inputs are **not 5 V tolerant**. Check the sensor's output voltage against the exact controller's limits before connecting it.
-- The diagrams and notes in this repository are planning documents, not a verified wiring schematic.
-- Do not connect or power unverified hardware. Ask a knowledgeable adult or mentor to review wiring and soldering.
+## What I still need to figure out
 
-## Progress checklist
+- Which exact capacitive sensor should I use?
+- Which ESP32 board or custom controller design makes sense for the project requirements?
+- How will I power the sensor and controller safely? Is solar practical for my version?
+- What threshold works for my soil, and how will I test it rather than guess?
+- What does the project need to include for the hardware programme's requirements?
 
-- [x] Create project repository and initial documentation
-- [ ] Compare candidate capacitive soil-moisture sensors
-- [ ] Confirm microcontroller and safe voltage compatibility
-- [ ] Finalise component list with verified part numbers
-- [ ] Draw and review the actual circuit schematic
-- [ ] Design PCB if required for the project
-- [ ] Build the first prototype
-- [ ] Record calibration and repeatability tests
-- [ ] Implement basic status/alert firmware
-- [ ] Test Wi-Fi/phone notification as a later feature
-- [ ] Document results, failures, and next steps
+## How I'm documenting this
 
-## Background
+I'm going to keep the notes honest and beginner-friendly. If something is just an idea, I'll call it an idea. If a circuit doesn't work, I'll write that down too. If I make a mistake, it can be part of the learning instead of something I pretend never happened.
 
-The project idea builds on an earlier soil-monitoring concept recognised by INSPIRE-MANAK, according to the project author's account. This repository documents the new design and implementation work; recognition of the earlier concept does not mean that this prototype has already been built or tested.
+The earlier concept was recognised by INSPIRE-MANAK, according to my records. This current repository documents the new design and implementation work; that recognition does **not** mean this version has already been built or tested.
 
-## Contributions and project integrity
-
-Design decisions, test results, photos, and progress notes should reflect work actually completed. Update this README as the design changes, and label plans separately from verified results.
+Thanks for checking out my project!
