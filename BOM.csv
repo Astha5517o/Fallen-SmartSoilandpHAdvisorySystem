@@ -1,0 +1,7 @@
+Item,Exact manufacturer/model,Specification to verify,Quantity,Unit price,Source URL,Status,Notes
+Capacitive soil-moisture sensor,TBD,Supply voltage and analog output range,1,,,Research needed,Do not order until model is checked
+Microcontroller or custom controller design,TBD,ADC input limits and Wi-Fi requirements,1,,,Research needed,Confirm project rules and exact design approach
+LED (optional),TBD,Forward voltage and current,1,,,Optional,Only include if useful for MVP
+LED series resistor (optional),TBD,Calculate from chosen LED and output,1,,,Optional,Do not guess resistor value
+Power source/regulator,TBD,Voltage/current and protection,1,,,Research needed,Review safe power plan
+Connectors and wires,TBD,Compatibility and ratings,As needed,,,Research needed,Specify after design
