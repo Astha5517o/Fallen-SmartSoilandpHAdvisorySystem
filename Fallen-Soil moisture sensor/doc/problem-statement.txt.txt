@@ -1,0 +1,31 @@
+What Problem?
+The crop need to be irrigated when they actually needed it,
+If they are overirrigated or underirrigated the plant growth will be 
+affected and also the soil nutrients also get disturbed by this. In
+some conditions the soil erosion is also a factor of problem could
+be happened.
+Who has it?
+Our farmers usually faces this problem as they use a fix time to irrigate
+their plants but temperature and seasons factor could differ which
+can cause the problems such as over or underirrigation. But farmer
+usually have a busy time and tight budget so they will not be able to look 
+led alert or do irrigation according to the different temperatures and
+different seasons. 
+Why does it matter??
+If the farmer has such a busy schedule and low budget so he could have
+normal mobile connecting alert system to help him to know best time
+to irrigate their plants and further how much he should irrigate this
+is not only benificial for farmers, the soil quality will also be 
+benifited by it as the nutrients will get time to grew and other earthwarms
+and fertilizers could really work more well with the help of this devise.
+What my device do?
+It will be under the soil and have sensors to detect moisture in soil 
+near the root of plants and when the moisture is low or high or 
+intermidiate it will give different status or alerts to the farmers
+mobile as he could know best time to irrigate his plants.
+In future versions I would like to add some more features such as
+soil quality measure or ph measure,
+so that we can know what natural materials we 
+can give to plants which act like its fertilizer but more good for soil
+and plant growth as slowly this device will not only improve the irrigation
+but also it will make the farming more organic and chemical free.
