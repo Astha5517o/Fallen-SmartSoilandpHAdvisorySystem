@@ -1,5 +1,5 @@
-Item,                                  Qty,                Est Cost (INR),                 Link,                                                                               Justification
-Capacitive Soil Moisture Sensor V1.2    2                     400,          https://www.amazon.in/Capacitive-Detection-Sensitivity-Corrosion-Resistant/dp/B0GGBH4NQ8     Reads soil moisture levels
-ESP32 DevKit V1,                        1,                    500,          amazon.in/-/hi/SP-ELECTRON-ESP32-ESP32-WROOM-32-प्रोजेक्ट्स/dp/B0HD7QC26L                         Microcontroller with built-in Wi-Fi for future phone alerts
-Active Buzzer 5V,                       5,                     70,          amazon.in/Electronic-B-10-Continuous-Raspbery-Electronics/dp/B0HCL3PTYW                      Local audio alert, and less quantity was not available online and if availabl with lot of delivery charges  
-LED 5mm + 220 ohm Resistor,             3,                    100,          Not available online in less quantity                                                         Visual status indicator
+Item,Qty,Est Cost (INR),Link,Justification
+Capacitive Soil Moisture Sensor V1.2,2,400,https://www.amazon.in/Capacitive-Detection-Sensitivity-Corrosion-Resistant/dp/B0GGBH4NQ8,Reads soil moisture levels. Buying 2 allows for testing.
+ESP32 DevKit V1,1,500,https://amazon.in/-/hi/SP-ELECTRON-ESP32-ESP32-WROOM-32/dp/B0HD7QC26L,Microcontroller for initial breadboard testing of V1 logic before custom PCB design.
+Active Buzzer 5V (Pack of 5),5,70,https://amazon.in/Electronic-B-10-Continuous-Raspbery-Electronics/dp/B0HCL3PTYW,Local audio alert. Bought in pack of 5 as single units had high delivery charges.
+LED 5mm + 220 ohm Resistor,3,100,Source: Local Hardware Store,Visual status indicator. Not available online in small quantities.
