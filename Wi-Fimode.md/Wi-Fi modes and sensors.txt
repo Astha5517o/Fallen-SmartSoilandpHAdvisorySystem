@@ -1,0 +1,30 @@
+To Buy a good Capative sensor There is a need to choose best one but also which is budget friendly but i don't wanna 
+compromise the quality to as as per the suggestion i asked by comparing three sensors with different prices but with same task I got 
+to know i should buy cheap soil sensors but in number of 2 or 3 so I decided to take have the quantity 3. Now I think I got to know which should be my
+choice of soil water sensor so I am going to edit my bom.csv.
+
+WIFI MODE NOTES:
+1. Station mode: IT connects esp32 from our home wifi or home router. we update the code with our networl's ssid and passward in the Arduino IDE.
+2. Access Point Mode: IT make ESP32 acts as an wifi hotspot allower, our devices such as smartpohnes to connect with directly to it. This is most 
+suitable for my idea.
+
+Steps to use these modes:
+1. Select the correct board and COM port in the Arduino IDE.
+2. Opening the built-in WI-Fi example sketeches provided in the ESP32 package.
+3. inputting my network details and setting the appropriate GPIO pin for the oboard LED. 
+4. Using the serial monitor to identify the assigned IP address after resetting the board.
+
+Easy to know steps or flow:
+for ACCESS POINT MODE:
+1. Open the Wi-Fi access point example sketch
+2. Set your custom network SSID and password(must be of 8 charc)in the code.
+3. Upload the sketch of your ESP32.(Use the predeveloped skectches from package of esp32)
+4. Reset the board and connect your phone or laptop to the new network, then enter the IP address into your browser to verify.
+
+I can modify it by:
+Yes, absolutely! Since the ESP32 is hosting a web server in the examples shown (1:52, 3:39), you can modify the HTML code directly within your Arduino IDE sketch to improve its appearance and usability.
+
+In the provided code, the web page content is typically stored as a string (often named html or within the client.println() functions). You can enhance this by:
+
+Adding CSS: Inject `
+
