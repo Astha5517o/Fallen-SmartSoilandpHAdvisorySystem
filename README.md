@@ -10,7 +10,7 @@ This project aims to help farmers know when their crops actually need water, pre
 
 ## Version 1 Scope:
 In initial model I wanted to keep the work flow I build tomorrow with stages i.e.
-## Capacitive soil moisture SENSOR  ----> ESP32 microcontroller -----> buzzer ------> Led or Alerts 
+- Capacitive Soil Moisture SENSOR  ----> ESP32 microcontroller -----> buzzer ------> Led or Alerts 
 
 ## Next Version will consist of following:
 - App with manageable Alerts and Database.
