@@ -1,0 +1,16 @@
+Item,Qty,Est Cost (INR),Link,Justification
+--- V1 PROTOTYPE (BREADBOARD TESTING) ---,,,,
+ESP32 DevKit V1,1,390,https://probots.co.in/esp32-30-pin-cp2102-development-board.html,Microcontroller for initial breadboard testing and Wi-Fi.
+Capacitive Soil Moisture Sensor V2.0,1,52,https://quartzcomponents.com/products/capacitive-soil-moisture-sensor-v2-0,Reads soil moisture levels.
+Analog pH Sensor Module (Generic),1,350,https://robu.in/product/ph-4502c-ph-sensor-module/,Reads soil pH for the AI advisory system.
+Breadboard (830 tie points),1,50,https://probots.co.in/830-points-solderless-breadboard.html,For testing the circuit without soldering.
+Jumper Wires (M-M and M-F),1,80,https://probots.co.in/40-pin-male-to-female-jumper-wires.html,To connect the sensors to the ESP32.
+Active Buzzer 5V,1,20,https://probots.co.in/active-buzzer-5v.html,Local audio alert.
+LED 5mm + 220 ohm Resistor,2,10,https://probots.co.in/5mm-led-assorted-pack.html,Visual status indicator.
+--- V2 UPGRADE (CUSTOM PCB & SOLAR) ---,,,,
+ESP32-WROOM-32E Module (Bare Chip),1,TBD,Link needed,Core microcontroller for the custom PCB.
+AMS1117-3.3V Voltage Regulator,2,TBD,Link needed,Converts 5V to 3.3V for ESP32.
+CP2102 USB-to-UART Bridge,1,TBD,Link needed,Allows computer to program the custom board.
+6V 180mA Solar Panel,1,TBD,Link needed,Solar power for outdoor deployment.
+Charge Controller & Battery,1,TBD,Link needed,Stores solar energy for night operation.
+Custom PCB Fabrication (JLCPCB),5,500,https://jlcpcb.com/,The physical board for the final circuit.
