@@ -1,6 +1,5 @@
-# Smart Soil Moisture Monitoring & Irrigation Alert System 
-
-This project aims to help farmers know when their crops actually need water, preventing overwatering and water wastage. 
+# Smart Soil & Ph advisory system
+A comprehensive IoT solution utilizing an ESP32 microcontroller to monitor soil health (moisture and pH) and provide targeted irrigation and soil treatment advice via a Wi-Fi connected app.. 
 
 **Status:** Day 1 - Research & Concept Design (Not built yet).
 **Hardware:** ESP32 (pending decision on custom PCB), Capacitive Soil Moisture Sensor.
