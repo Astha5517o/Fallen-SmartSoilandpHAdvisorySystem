@@ -1,5 +1,22 @@
-Item,Qty,Est Cost (INR),Link,Justification
-Capacitive Soil Moisture Sensor V1.2,2,400,https://www.amazon.in/Capacitive-Detection-Sensitivity-Corrosion-Resistant/dp/B0GGBH4NQ8,Reads soil moisture levels. Buying 2 allows for testing.
-ESP32 DevKit V1,1,500,https://amazon.in/-/hi/SP-ELECTRON-ESP32-ESP32-WROOM-32/dp/B0HD7QC26L,Microcontroller for initial breadboard testing of V1 logic before custom PCB design.
-Active Buzzer 5V (Pack of 5),5,70,https://amazon.in/Electronic-B-10-Continuous-Raspbery-Electronics/dp/B0HCL3PTYW,Local audio alert. Bought in pack of 5 as single units had high delivery charges.
-LED 5mm + 220 ohm Resistor,3,100,Source: Local Hardware Store,Visual status indicator. Not available online in small quantities.
+import pandas as pd
+rows = [
+    ["U1","ESP32 DevKit (ESP32-WROOM-32 compatible)","1","Prototype controller","Required","Select exact board; USB-powered for initial tests",""],
+    ["J1","Capacitive soil-moisture sensor (DFRobot SEN0193 or compatible)","1","Analog soil-moisture measurement","Required","Confirm 3.3 V-compatible output and pinout",""],
+    ["J2","Analog pH sensor kit with interface board (DFRobot SEN0161-V2 or compatible)","1","pH measurement of prepared soil-water samples","Required","Buy complete kit including probe and interface; confirm output voltage",""],
+    ["BB1","830-point solderless breadboard","1","Temporary circuit assembly","Required","For initial prototype; no soldering",""],
+    ["W1","Male-to-male jumper wire set","1 set","Breadboard connections","Required","Check quantity and wire length",""],
+    ["W2","Male-to-female jumper wire set","1 set","Sensor-to-breadboard connections","Recommended","Connector compatibility depends on purchased modules",""],
+    ["P1","USB data cable compatible with ESP32 board","1","USB power and programming","Required","Check board connector: Micro-USB or USB-C",""],
+    ["CAL1","pH 4.00 buffer solution","1 bottle/sachet","pH calibration","Required for calibration","Use manufacturer-recommended buffer",""],
+    ["CAL2","pH 7.00 buffer solution","1 bottle/sachet","pH calibration","Required for calibration","Two-point calibration; follow probe manual",""],
+    ["CAL3","pH 10.00 buffer solution","1 bottle/sachet","Optional third calibration point","Optional","Useful if measuring alkaline samples",""],
+    ["S1","Clean sample cups/containers","3-4","Soil-water sample preparation","Required","Use separate clean containers and label them",""],
+    ["R1","Resistors / capacitors for signal conditioning","As designed","Only if circuit measurements require them","TBD","Do not buy until exact circuit and sensor output are verified",""],
+    ["PS1","Solar panel + compatible battery + charger + regulator","1 set","Later off-grid power stage","Later phase","Do not purchase until power budget and compatible parts are selected",""],
+    ["PCB1","Custom PCB and headers","1","Final compact prototype","Later phase","Design after breadboard circuit is tested",""],
+    ["ENC1","Project enclosure","1","Protective exhibition housing","Later phase","Size after prototype layout is known",""],
+]
+df = pd.DataFrame(rows, columns=["Ref","Component / specification","Qty","Purpose","Priority","Selection / safety notes","Online product link"])
+path="/mnt/data/soil_health_monitoring_BOM.csv"
+df.to_csv(path,index=False)
+print(path)
