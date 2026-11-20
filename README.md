@@ -7,14 +7,15 @@ A comprehensive IoT solution utilizing an ESP32 microcontroller to monitor soil 
 ## Progress
 - Initial workflow and circuit diagrams created (see `/progress` or `/hardware`).
 
-## Version 1 Scope:
+## Old Version e:
 In initial model I wanted to keep the work flow I build tomorrow with stages i.e.
 - Capacitive Soil Moisture SENSOR  ----> ESP32 microcontroller -----> buzzer ------> Led or Alerts 
 
-## Next Version will consist of following:
-- App with manageable Alerts and Database.
+## Current Version is consist of following:
+- AI based App with manageable Alerts, Database and AI suggestions.
 - Based on different crops
-- PH level measuring and the natural compost suggestions
+- Scanning of plants and disease detection and solution suggestion with available and internet.
+- PH level measuring and the natural compost suggestions(for example use coconut husk now for restoring soil nutrients etc.  )
 
 
 ## Final Idea / Idea Changes
@@ -26,3 +27,8 @@ In initial model I wanted to keep the work flow I build tomorrow with stages i.e
 - So I used EasyEDA to make my schematic circuit and I did it today It was fun doing it.
 - Currently,
 - The initial schematic has been create. Electrical verification, components compatibility checks, power-system integration and PCB development are still pending.
+  [Schematic_Smart-soil-and-ai-ph-advisory-system_2026-11-15.pdf](https://github.com/user-attachments/files/35173201/Schematic_Smart-soil-and-ai-ph-advisory-system_2026-11-15.pdf)
+<img width="1169" height="880" alt="Schematic_Smart-soil-and-ai-ph-advisory-system_2026-11-20" src="https://github.com/user-attachments/assets/d65526fe-20f3-4e2b-8667-e5c1355dbc3e" />
+
+<img width="349" height="465" alt="PCB_PCB_Smart-soil-and-ai-ph-advisory-system_2_2026-11-20" src="https://github.com/user-attachments/assets/9535402f-0936-44d8-be32-6ff2c92cd3f2" />
+I am still working on my schematic and pcb and I'll be updating it after my changes.
