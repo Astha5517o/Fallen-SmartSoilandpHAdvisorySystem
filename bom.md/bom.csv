@@ -1,9 +1,22 @@
-Item,Description,Quantity,Per-Part Unit Price,Actual Item Price,URL,Actual Total Cost (13% Tax),Theoretical Lowest Cost (with tax)
-Capacitive Soil Moisture Sensor V2.0,Measures soil moisture (corrosion resistant),3,45,135,https://www.indiamart.com/proddetail/capacitive-soil-sensor-v2-0-ab054c-2853167041262.html,152.55,135
-Liquid pH Sensor Module Kit,Analog pH sensor with probe and regulator board,1,1575,1575,https://www.flipkart.com/testin-electronics-liquid-ph-0-14-value-detection-sensor-module-regulator-board-electronic-components-hobby-kit/p/itm3805c4e49a754,1779.75,1575
-ESP32 DevKit V1,Microcontroller with Wi-Fi for V1 testing,1,509,509,https://www.amazon.in/Robocraze-ESP32-Development-Board-Pin/dp/B0D6GDV77P,575.17,509
-Breadboard (830 tie points),For prototyping without soldering,1,50,50,https://probots.co.in/830-points-solderless-breadboard.html,56.5,50
-Jumper Wires (M-M and M-F),For connecting sensors to ESP32,1,80,80,https://probots.co.in/40-pin-male-to-female-jumper-wires.html,90.4,80
-Active Buzzer 5V,Local audio alert,1,20,20,https://probots.co.in/active-buzzer-5v.html,22.6,20
-LED 5mm + 220 ohm Resistor,Visual status indicator,2,10,20,https://probots.co.in/5mm-led-assorted-pack.html,22.6,20
-PCB Fabrication (JLCPCB),Custom ESP32 carrier board (5 pcs),1,700,700,https://jlcpcb.com/,791,700
+Item,Specification / purpose,Quantity,Status,Unit price INR,Purchase link,Notes
+ESP32 development board,ESP32-WROOM-32 30-pin development board with USB connector,1,Ordered - awaiting delivery,,https://www.amazon.in/OceanLabz-ESP32-WROOM-32-Bluetooth-Pre-Loaded/dp/B0D2BB68S9,Confirm the physical board and USB connector match the EasyEDA symbol and footprint before fabrication
+Capacitive soil moisture sensor,Capacitive Soil Moisture Sensor V2.0,1,Ordered / received,56,,Use the actual sensor pin order when checking the connector footprint
+DS18B20 temperature probe,Waterproof DS18B20 digital temperature sensor,1,Ordered,54,,Needs a 4.7k ohm pull-up resistor from DATA to 3.3V
+OLED display,0.96 inch SSD1306 I2C display module 4-pin,1,Ordered,144,,Check the module pin order and operating voltage
+Active buzzer module,5V active buzzer module,1,Ordered,,,"Use a suitable GPIO control connection; do not connect its 5V supply pin to a 3.3V GPIO"
+Red LED,5mm red indicator LED,1,Ordered,,,
+Yellow LED,5mm yellow indicator LED,2,Ordered,,,
+Green LED,5mm green indicator LED,1,Ordered,,,
+Resistor assortment,30 values / 150 resistors,1,Ordered,78,,Includes the 4.7k ohm resistor needed for DS18B20; verify actual kit values
+Breadboard,MB102 830-point breadboard,1,Ordered,68,,For prototype testing; not a PCB-mounted component
+Jumper wires,MM / MF / FF jumper wire set,1,Ordered,,,
+Female header strip,40-pin straight female header strip,1,Ordered,10,,Cut to the required lengths after checking module pitch
+18650 battery holder,Single-cell 18650 holder,1,Ordered,,,"Use only with a compatible protected battery/charging arrangement"
+18650 rechargeable battery,2200mAh 18650 cell,1,Ordered,,,"Do not connect directly to the solar panel or ESP32; use a suitable protected solar charging and power-management module"
+Solar panel,6V 1.1W 180mA mini solar panel,1,Ordered,,,"Panel output must go through a suitable solar charger and regulated power stage"
+USB cable,Micro-USB cable listed for Raspberry Pi,1,Ordered,36,,Verify connector compatibility with the actual ESP32 board; the ordered cable may not fit a USB-C board
+Heat-shrink tubing,4mm black heat-shrink sleeve,1,Ordered,,,
+pH interface module,Analog pH interface board and compatible probe,1,Not ordered / required for pH measurement,,,"Not included in the confirmed order list. Verify its output range before connecting it to an ESP32 ADC input"
+Solar charging and power module,Solar-compatible 18650 charging, battery protection and regulated output,1,Not ordered / required for solar operation,,,"Choose a complete compatible module; do not connect the 6V panel or cell directly to the ESP32"
+PCB fabrication,Custom PCB fabrication,1,Not ordered / quote required,,https://jlcpcb.com/,Final cost depends on board dimensions, layers, finish, shipping and quantity
+3D printed enclosure / model,Enclosure for the assembled device,1,Not ordered / quote required,,,"Final dimensions depend on the verified PCB and real component measurements"
