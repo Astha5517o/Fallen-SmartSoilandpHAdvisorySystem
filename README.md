@@ -27,15 +27,15 @@ I am still learning electronics and PCB design, so I am documenting the changes 
 I used EasyEDA to draw the schematic and create the first PCB layout. I also generated a 3D view to check the placement of the main components.
 
 ### Schematic
+<img width="1169" height="827" alt="Schematic_Smart-soil-and-ai-ph-advisory-system_2026-11-21 (1)" src="https://github.com/user-attachments/assets/e839da14-9297-4ffa-b075-139bad9833b3" />
 
-![SMART SOIL schematic](hardware/schematic/Schematic_Smart-soil-and-ai-ph-advisory-system_2026-11-15.svg)
 
 - [Open schematic PDF](hardware/schematic/Schematic_Smart-soil-and-ai-ph-advisory-system_2026-11-15.pdf)
 - [Schematic notes and pending checks](hardware/schematic/README.md)
 
 ### PCB
 
-![SMART SOIL PCB layout](hardware/Pcb/PCB_PCB_Smart-soil-and-ai-ph-advisory-system_2_2026-11-21%20(1).png)
+<img width="317" height="433" alt="PCB_PCB_Smart-soil-and-ai-ph-advisory-system_2_2026-11-21 (1)" src="https://github.com/user-attachments/assets/7bf87dda-6ba9-436f-b029-dedb79abc182" />
 
 - [PCB design notes](hardware/Pcb/README.md)
 - [Hardware overview](hardware/README.md)
