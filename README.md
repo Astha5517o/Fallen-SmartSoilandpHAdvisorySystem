@@ -1,35 +1,65 @@
-# Smart Soil & Ph advisory system
-A comprehensive IoT solution utilizing an ESP32 microcontroller to monitor soil health (moisture and pH) and provide targeted irrigation and soil treatment advice via a Wi-Fi connected app.. 
+# SMART SOIL – Soil & pH Advisory System
 
-**Status:** Day 1 - Research & Concept Design (Not built yet).
-**Hardware:** ESP32 (pending decision on custom PCB), Capacitive Soil Moisture Sensor.
+I am working on SMART SOIL to help with one common farming problem: deciding when the soil actually needs water. A fixed watering routine may not work for every crop, season or soil condition. Too much or too little water can affect plant growth and soil quality.
 
-## Progress
-- Initial workflow and circuit diagrams created (see `/progress` or `/hardware`).
+My idea is to place sensors near the plant roots and collect soil readings. The ESP32 will process the sensor readings and send them to a phone through Bluetooth Low Energy (BLE). The phone app is planned to show the readings and give simple irrigation and soil-care suggestions.
 
-## Old Version e:
-In initial model I wanted to keep the work flow I build tomorrow with stages i.e.
-- Capacitive Soil Moisture SENSOR  ----> ESP32 microcontroller -----> buzzer ------> Led or Alerts 
+## What I am trying to build
 
-## Current Version is consist of following:
-- AI based App with manageable Alerts, Database and AI suggestions.
-- Based on different crops
-- Scanning of plants and disease detection and solution suggestion with available and internet.
-- PH level measuring and the natural compost suggestions(for example use coconut husk now for restoring soil nutrients etc.  )
+- Soil moisture monitoring using a capacitive soil moisture sensor.
+- Temperature monitoring using a waterproof DS18B20 probe.
+- Soil pH measurement using an external analog pH interface and probe (hardware selection and testing are still pending).
+- OLED display for local readings.
+- LED and buzzer alerts.
+- A phone app for viewing readings and getting suggestions.
+- Future app features for crop identification and scanning Soil Health Card / NPK reports.
 
+The app features that use AI are planned software features. The current PCB does not contain a separate AI chip, and the device does not directly measure NPK.
 
-## Final Idea / Idea Changes
-- I have added more features in it and decided to start building prototype of it as early i can.
-- I added that now it can also check the ph of soil theough ph sensor and then it would be connected through the ai app which will suggest best treatment for the soil and to store its nutrients.
-- I am thinking right now building pcb from scratch or using ESP32 which would be better option for me.
+## Why I started this
 
-## Schematic Ciruit
-- So I used EasyEDA to make my schematic circuit and I did it today It was fun doing it.
-- Currently,
-- The initial schematic has been create. Electrical verification, components compatibility checks, power-system integration and PCB development are still pending.
-  [Schematic_Smart-soil-and-ai-ph-advisory-system_2026-11-15.pdf](https://github.com/user-attachments/files/35173201/Schematic_Smart-soil-and-ai-ph-advisory-system_2026-11-15.pdf)
-<img width="1169" height="880" alt="Schematic_Smart-soil-and-ai-ph-advisory-system_2026-11-20 (1)" src="https://github.com/user-attachments/assets/5654fc44-761c-4870-a92a-d13c54ffc840" />
+I wanted to make something that can be useful for farmers and also help in avoiding unnecessary irrigation. I first thought about a simple moisture alert device, but later I started adding temperature and pH so that the system can give more context about the soil.
 
-<img width="349" height="465" alt="PCB_PCB_Smart-soil-and-ai-ph-advisory-system_2_2026-11-20" src="https://github.com/user-attachments/assets/9535402f-0936-44d8-be32-6ff2c92cd3f2" />
+I am still learning electronics and PCB design, so I am documenting the changes and checking the circuit step by step instead of saying that it is already finished.
 
-## I am still working on my schematic and pcb and I'll be updating it after my changes.
+## Design progress
+
+I used EasyEDA to draw the schematic and create the first PCB layout. I also generated a 3D view to check the placement of the main components.
+
+### Schematic
+
+![SMART SOIL schematic](hardware/schematic/Schematic_Smart-soil-and-ai-ph-advisory-system_2026-11-15.svg)
+
+- [Open schematic PDF](hardware/schematic/Schematic_Smart-soil-and-ai-ph-advisory-system_2026-11-15.pdf)
+- [Schematic notes and pending checks](hardware/schematic/README.md)
+
+### PCB
+
+![SMART SOIL PCB layout](hardware/Pcb/PCB_PCB_Smart-soil-and-ai-ph-advisory-system_2_2026-11-21%20(1).png)
+
+- [PCB design notes](hardware/Pcb/README.md)
+- [Hardware overview](hardware/README.md)
+- [Bill of Materials](hardware/BOM.csv)
+
+## Current status
+
+**Design stage — not yet tested as a working prototype.**
+
+The schematic and PCB layout are first versions. The ESP32 board is still awaiting delivery. I still need to confirm its exact footprint, correct the GPIO assignments, finalize the pH interface and add a suitable solar charging and power-management solution.
+
+The current 3D view is a visual preview. It is not proof that the PCB is ready to manufacture. I will update the files after the circuit checks and physical testing.
+
+## Components and project files
+
+The [BOM](hardware/BOM.csv) separates items already ordered from parts that are still required. The hardware folder contains the current schematic and PCB design notes.
+
+## Next work
+
+1. Check the exact ESP32 board and connector footprint after delivery.
+2. Correct the schematic and run ERC.
+3. Update the PCB and run DRC.
+4. Check the 3D model and export the EasyEDA source and Gerber files.
+5. Assemble the prototype and test each sensor.
+6. Write and test the ESP32 firmware and BLE connection.
+
+I will keep adding the actual design files and test results here as I make progress.
